@@ -1,3 +1,7 @@
+/*
+João Honório - 08:53
+Guilherme - 10:17
+*/
 using System;
 using System.Collections.Generic; // Necessário para criar Listas de inimigos
 using System.Threading;
@@ -18,7 +22,7 @@ namespace ProjetoRPG
 
         public bool IsDead => HP <= 0; // Propriedade atalho para checar morte
 
-        public Unit(string name, int maxHp, int atk, int startX, int startY)
+        public Unit(string name, int maxHp, int atk, int startX, int startY)  //
         {
             Name = name;
             MaxHP = maxHp;
@@ -29,9 +33,9 @@ namespace ProjetoRPG
         }
     }
 
-    public class Player : Unit
+    public class Player : Unit 
     {
-        public Player(int x, int y) : base("Herói", 50, 8, x, y) { } // Herói tem 50 HP e 8 ATK
+        public Player(int x, int y) : base("Herói", 50, 8, x, y) { } // Instancia Herói com 50 HP e 8 ATK
 
         public void Move(int newX, int newY)
         {
@@ -54,7 +58,6 @@ namespace ProjetoRPG
     }
 
     // --- O MOTOR DO JOGO ---
-
     public class GameBoard
     {
         private int size;
@@ -77,6 +80,7 @@ namespace ProjetoRPG
             InitializeMap();
         }
 
+        /*Aqui podemos criar o mapa conforme queremos.*/
         private void InitializeMap()
         {
             // Preenche chão
@@ -146,6 +150,7 @@ namespace ProjetoRPG
         }
 
         // --- SISTEMA DE COMBATE (RPG TURN-BASED) ---
+        /*Eis o combate, por algum motivo. Ninguém mandou fazer,*/
         private void StartCombat(Enemy enemy)
         {
             bool inCombat = true;
@@ -243,19 +248,21 @@ namespace ProjetoRPG
         }
     }
 
+    /*Eis o homem*/
     class Program
     {
         static void Main(string[] args)
         {
-            GameBoard game = new GameBoard(10); // Cria o jogo
+            GameBoard game = new GameBoard(10); // Instancia o jogo
 
-            while (!game.player.IsDead)
+            while (!game.player.IsDead) // Loop de Gameplay
             {
                 game.DrawBoard();
 
                 var key = Console.ReadKey(true).Key;
                 string input = "";
 
+                //Movimentação do personagem
                 if (key == ConsoleKey.W || key == ConsoleKey.UpArrow) input = "w";
                 if (key == ConsoleKey.S || key == ConsoleKey.DownArrow) input = "s";
                 if (key == ConsoleKey.A || key == ConsoleKey.LeftArrow) input = "a";
