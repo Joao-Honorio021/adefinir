@@ -26,11 +26,11 @@
 | 29 | Matheus Santos Domingues                         | Mapa                |                                                      |
 | 33 | Raissa Diniz Falleiro                            | Mapa                |                                                      |
 | 38 | Vitor Hugo Mendes Pacheco                        | Mapa                |                                                      |
-| 6  | Arthur Santos Viellas                            | Sistema             |                                                      |
-| 21 | Lara Porto Muniz                                 | Sistema             |                                                      |
-| 26 | Manuella Thomaz Lino                             | Sistema             |                                                      |
-| 34 | Raphaella Vasquez Elias e Silva                  | Sistema             |                                                      |
-| 16 | João Pedro da Silva Guimarães                    | Sistema             |                                                      |
+| 6  | Arthur Santos Viellas                            | Sistema             | Método ImprimirMenu / Líder                          |
+| 21 | Lara Porto Muniz                                 | Sistema             | Método ImprimirFinal                                 |
+| 26 | Manuella Thomaz Lino                             | Sistema             | Método TmprimirTitulo                                |
+| 34 | Raphaella Vasquez Elias e Silva                  | Sistema             | Método ImprimirGameOver                              |
+| 16 | João Pedro da Silva Guimarães                    | Sistema             | Método ImprimirCenas                                 |
 | 2  | Ana Clara Lanes Moura                            | Personagem          |                                                      |
 | 4  | Amaldo Oliveira Meirelles                        | Personagem          |                                                      |
 | 15 | Isadora Figueira Faya                            | Personagem          |                                                      |
